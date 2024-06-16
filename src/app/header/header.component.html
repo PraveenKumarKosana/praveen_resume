@@ -1,0 +1,120 @@
+<header class="header">
+  <div class="top-bar theme-bg-primary-darken">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+       
+        <ul class="social-list list-inline mb-0">
+          <li class="list-inline-item">
+            <a
+              class="text-white"
+              target="_blank"
+              href="https://www.linkedin.com/in/praveen-kosana-494985229/"
+              ><i class="fab fa-linkedin-in fa-fw"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://github.com/PraveenKumarKosana?tab=repositories"
+              class="text-white"
+              ><i class="fab fa-github-alt fa-fw"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://stackoverflow.com/users/12386066/praveen-kosana"
+              class="text-white"
+              ><i class="fab fa-stack-overflow fa-fw"></i
+            ></a>
+          </li>
+        </ul>
+      
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-uppercase" id="navigation">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item me-lg-3">
+              <a
+                class="nav-link"
+                [routerLink]="['/about']"
+                routerLinkActive="active"
+                >About</a
+              >
+            </li>
+            <li class="nav-item me-lg-3">
+              <a
+                class="nav-link"
+                [routerLink]="['/resume']"
+                routerLinkActive="active"
+                >Resume</a
+              >
+            </li>
+            <!-- <li class="nav-item me-lg-3">
+              <a
+                class="nav-link"
+                [routerLink]="['/contact']"
+                routerLinkActive="active"
+                >Contact</a
+              >
+            </li> -->
+          </ul>
+          <span id="slide-line"></span>
+        </div>
+      </nav>
+    </div>
+    <!--//container-->
+  </div>
+  <!--//top-bar-->
+
+  <div
+    class="header-intro theme-bg-primary text-white py-5"
+    *ngIf="currentRoute !== '/resume' && currentRoute !== '/contact'"
+  >
+    <div class="container">
+      <div class="profile-teaser row gx-lg-5 justify-content-center">
+        <div class="col-12 col-md-auto text-center text-md-start">
+          <img
+            class="profile-image mb-3 mb-lg-0 ms-md-0 rounded mx-auto"
+            src="assets/images/profile.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col text-center text-md-start">
+          <div class="lead">Hello, my name is</div>
+          <h2 class="mt-0 display-4 font-weight-bold">Kosana Praveen Kumar</h2>
+          <div class="bio mb-3 justify">
+            Dynamic and results-oriented Front-end Developer and Business
+            Analyst with over 3 years of experience in software development and
+            business process optimization. Proven track record in developing
+            robust code for high-volume businesses and translating complex
+            business requirements into scalable technological solutions. Adept
+            at driving innovations and implementing effective solutions, with a
+            focus on improving system functionalities and operational
+            efficiency.
+          </div>
+          <!--//bio-->
+          <a
+            class="theme-btn-on-bg btn font-weight-bold theme-btn-cta"
+              (click)="hire()"
+            >Hire Me</a
+          >
+        </div>
+        <!--//media-body-->
+      </div>
+      <!--//profile-teaser-->
+    </div>
+    <!--//container-->
+  </div>
+  <!--//header-intro-->
+</header>
+<!--//header-->
